@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ConnectionActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="IP: "
+            android:id="@+id/txViewIP"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/editIP"
+            android:layout_alignBottom="@+id/txViewIP"
+            android:layout_toRightOf="@+id/txViewIP"
+            android:hint="Please input IP"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Port: "
+            android:id="@+id/txViewPort"
+            android:layout_below="@+id/txViewIP"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="11dp"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/editPort"
+            android:layout_alignBottom="@+id/txViewPort"
+            android:layout_toRightOf="@+id/txViewPort"
+            android:hint="Please input port"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:id="@+id/btnConnect"
+            android:layout_below="@+id/txViewPort"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="11dp"
+            android:onClick="onConnect"/>
+
+</RelativeLayout>
